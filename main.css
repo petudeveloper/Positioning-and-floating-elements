@@ -6,6 +6,10 @@ a{
     color: inherit;
 }
 
+body {
+    color: #333;
+}
+
 /*START top navigation bar*/
 #topNavBar {
     display: flex;
@@ -117,18 +121,19 @@ a{
 
 #referenceImageCaptionHeader {
     color: #666;
-    font-size: 1rem;
+    font-size: 0.9rem;
 }
 
 #authorReferenceImageCaptionHeader {
     color: #888;
-    font-size: 0.85rem;
+    font-size: 0.8rem;
 }
 
 /*END header of page*/
 /*START main container of the article*/
 
 #mainContainer {
+    margin-top: 20px;
     display: grid;
     grid-template-columns: 4fr 1fr;
 }
@@ -140,5 +145,131 @@ a{
 .articleContainer {
     display: block;
     margin-left: 0;
-    width: 600px;
+    width: 625px;
+    font-family: 'Domine', serif;
+    justify-self: end;
+    margin-right: 60px;
+}
+
+.articleContainer p {
+    font-size: 20px;
+    line-height: 1.6;
+}
+
+.articleContainer h2 {
+    font-size: 1.2rem;
+}
+
+.mainContent {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 30px;
+    border-bottom: solid 1px #e2e2e2;
+    gap: 15px;
+    font-family: helvetica,arial;
+    letter-spacing: -0.5px;
+}
+
+#author {
+    font-weight: bold;
+    font-size: 0.9rem;
+}
+
+#date{
+    font-size: 0.8rem;
+}
+
+#advertisingContainer {
+    display: flex;
+    align-items: center;
+    padding: 12px 0;
+}
+
+#advertisingInfo {
+    color: rgb(51, 51, 51);
+    width: 85%;
+    margin-right: 5px;
+}
+
+#adverBold {
+    font-weight: bold;
+    font-size: 0.9rem;
+    letter-spacing: normal;
+    font-family: helvetica,arial;
+}
+
+#adverNormal {
+    letter-spacing: -0.5px;
+    color: #666;
+}
+
+
+.singUpBtn {
+    padding: 6px 12px 4px;
+    font-size: 0.9rem;
+    font-weight: bold;
+    background-color: white;
+    margin-top: 4px;
+    border: 1px solid rgb(0, 0, 0);
+    border-radius: 2px;
+    cursor: pointer;
+}
+.singUpBtn:hover {
+    background-color: black;
+    color: white;
+}
+
+#thanksSubscribe {
+    display: flex;
+    justify-content: center;
+    font-family: helvetica,arial;
+    font-weight: bold;
+    font-size: 15px;
+    height: 76px;
+}
+
+#spanContainerThanksSubscribe {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-top: solid 1px #ccc;
+    border-bottom: solid 1px #ccc;
+    
+}
+
+#subscribeLink {
+    color: rgb(50, 104, 145);
+}
+
+.gridAside{
+    display: flex;
+    justify-content: center;
+    align-self: center;
+}
+
+#containerSuggestions {
+    width: 210px;
+    font-family: 'Domine', serif;
+}
+
+#containerSuggestions h3{
+    width: 210px;
+    font-family: helvetica,arial;
+    font-size: 14px;
+    padding-bottom: 12px;
+    border-bottom: solid 1px #e2e2e2;
+}
+
+.containerSingleSuggestion {
+    display: flex;
+    font-size: 13px;
+}
+
+.suggestionImage{
+    width: 75px;
+}
+
+.suggestionTittle{
+    margin-left: 10px;
 }
