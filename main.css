@@ -6,6 +6,12 @@ a{
     color: inherit;
 }
 
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
 body {
     color: #333;
     width: 100%;
@@ -40,8 +46,8 @@ body {
     font-weight: bold;
 }
 
-#nytLogo{
-    width: 230px;
+.nytLogo{
+    width: 200px;
 }
 
 .navBtn {
@@ -433,3 +439,62 @@ body {
 }
 
 /*END navBottom*/
+/*START NYT nav*/
+#mainNytNav {
+    display: flex;
+    justify-content: center;
+    justify-self: center;
+    font-family: helvetica;
+}
+
+#mainNytNavContainer {
+    width: 90%;
+}
+
+#containermainNytVan {
+    display: flex;
+}
+
+#nytNav {
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+}
+
+#firstBottomNavList {
+    margin-bottom: 15px;
+    border-bottom: solid 1px #e2e2e2;
+}
+
+.sectionTittle {
+    font-size: 12px;
+}
+
+.mytTopic {
+    font-size: 0.8rem;
+    letter-spacing: 0.6px;
+}
+
+.topicList {
+    margin:0 0 10px 0;  
+}
+
+#rightNytNav {
+    margin-left: 20px;
+    padding-left: 20px;
+    border-left: solid 1px #e2e2e2;
+}
+
+.navBottomIcon {
+    width: 13px;
+}
+
+.boldItemSubNav {
+    font-weight: bold;
+    font-size: 15px;
+}
+
+.normalItemSubNav {
+    font-size: 11px;
+}
+/*END NYT nav*/
