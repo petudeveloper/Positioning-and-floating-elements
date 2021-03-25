@@ -8,6 +8,7 @@ a{
 
 body {
     color: #333;
+    width: 100%;
 }
 
 /*START top navigation bar*/
@@ -113,18 +114,18 @@ body {
     width: 100%;
 }
 
-#headerImageCaption {
+.imageCaption {
     width: 80%;
     font-family: 'Domine', serif;
     margin-top: 10px;
 }
 
-#referenceImageCaptionHeader {
+.referenceImageCaption {
     color: #666;
     font-size: 0.9rem;
 }
 
-#authorReferenceImageCaptionHeader {
+.authorReferenceImageCaption {
     color: #888;
     font-size: 0.8rem;
 }
@@ -135,11 +136,12 @@ body {
 #mainContainer {
     margin-top: 20px;
     display: grid;
-    grid-template-columns: 4fr 1fr;
+    grid-template-columns: 3fr 1fr;
 }
 
-#middleArticleContainer {
-    grid-column: 1/3;
+.articleLink {
+    text-decoration: underline;
+    color: #326891;
 }
 
 .articleContainer {
@@ -152,12 +154,16 @@ body {
 }
 
 .articleContainer p {
-    font-size: 20px;
+    font-size: 19px;
     line-height: 1.6;
 }
 
 .articleContainer h2 {
     font-size: 1.2rem;
+}
+
+.articleImg {
+    width: 600px;
 }
 
 .mainContent {
@@ -202,7 +208,6 @@ body {
     letter-spacing: -0.5px;
     color: #666;
 }
-
 
 .singUpBtn {
     padding: 6px 12px 4px;
@@ -273,3 +278,59 @@ body {
 .suggestionTittle{
     margin-left: 10px;
 }
+
+    /*START middle article*/
+.middleArticleContainer {
+    grid-column: 1/3;
+}
+
+.middleArticle {
+    width: 945px;
+    display: block;
+    margin: auto
+}
+
+.middleArticle h1 {
+    font-size: 1.3rem;
+    margin-bottom: 5px;
+}
+#middleArticleDescription {
+    color: #666;
+}
+
+#middleArticleGrid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    font-family: helvetica,arial;
+    grid-gap: 15px 5px;
+    margin-bottom: 24px;
+}
+
+.imgMiddleArticleGrid {
+    width: 230px;
+}
+
+.boldDesc {
+    font-weight: 800;
+    font-size: 11px;
+    color: black;
+}
+
+.normalDesc {
+    font-size: 14px;
+    font-weight: lighter;
+}
+
+#middleFooterLine {
+    width: 60px;
+    margin-bottom: 13px;
+    border-bottom: solid 1px;
+}
+
+#middleArticleFooter {
+    font-family: helvetica,arial;
+    font-size: 13px;
+}
+    /*END middle article*/
+/*END main container of the article*/
