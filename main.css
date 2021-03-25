@@ -166,6 +166,41 @@ body {
     width: 600px;
 }
 
+.gridArticleFooter {
+    font-family: helvetica,arial;
+    color: rgb(102, 102, 102);
+    font-size: 12px;
+}
+
+#socialMediaFooter {
+    gap: 17px;
+    color: black;
+    font-size: 1rem;
+}
+
+.linkArticleFooter {
+    text-decoration: underline;
+}
+
+.gridArticleFooterInteraction {
+    display: flex;
+    justify-content: space-between;
+    margin: 24px auto;
+}
+
+.commentsFooterBtn {
+    background-color: rgb(86, 123, 149);
+    border: 1px solid rgb(50, 104, 145);
+    border-radius: 3px;
+    color: white;
+    display: block;
+    font-weight: 600;
+    letter-spacing: 0.05em;
+    font-size: 0.8rem;
+    width: 320px;
+    padding: 9px 0px;
+}
+
 .mainContent {
     display: flex;
     flex-direction: column;
