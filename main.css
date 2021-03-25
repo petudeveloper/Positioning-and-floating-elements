@@ -369,3 +369,67 @@ body {
 }
     /*END middle article*/
 /*END main container of the article*/
+/*START navBottom*/
+#bottomNav {
+    display: flex;
+    justify-content: center;
+    width: 1200px;
+    gap: 30px;
+    margin-left: 70px;
+}
+
+.containerTittleNavBottom {
+    margin-top: 20px;
+    border-top: solid 1px black;
+    padding: 15px 0px;
+}
+
+.tittleNavBottom {
+    font-family: helvetica;
+    width: 100%;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.navBottomImg{
+    width: 270px;
+}
+
+.infoNavGridBottom {
+    width: 270px;
+}
+
+.navBottomTittleFoto {
+    font-size: 16px;
+    margin: 2px 0px;
+}
+
+.dateNavBottomPic {
+    color: rgb(153, 153, 153);
+    font-size: 12px;
+    font-family: helvetica;
+}
+
+.navBottomImgCapt{
+    font-size: 10px;
+    color: rgb(153, 153, 153);
+    text-align: right;
+}
+
+.gridBottomNav {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 30px 15px;
+}
+
+#leftBottomNav {
+    padding-bottom: 15px;
+}
+
+.mostPopularSuggestion {
+    padding: 15px 0px;
+    font-size: 20px;
+    border-bottom: solid 1px #e2e2e2;
+}
+
+/*END navBottom*/
