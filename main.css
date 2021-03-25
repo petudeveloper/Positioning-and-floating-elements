@@ -28,6 +28,7 @@ body {
     width: 100%;
     top: 0%;
     left: 0;
+    border-bottom: solid 1px #e2e2e2;
 }
 
 #leftNav {
@@ -39,11 +40,16 @@ body {
     margin-right: 15px;
 }
 
+#spaceNcosmos:hover {
+    text-decoration: underline;
+}
+
 .navIcon {
     padding: 8px 15px;
     font-family: helvetica,arial;
     font-size: 15px;
     font-weight: bold;
+    cursor: pointer;
 }
 
 .nytLogo{
@@ -87,6 +93,7 @@ body {
     display: flex;
     gap: 17px;
     margin-bottom: 20px;
+    cursor: pointer;
 }
 
 .containerSocialMedia {
@@ -118,6 +125,7 @@ body {
 
 #headerImage {
     width: 100%;
+    cursor: pointer;
 }
 
 .imageCaption {
@@ -217,7 +225,16 @@ body {
     letter-spacing: -0.5px;
 }
 
-#author {
+#authorName {
+    cursor: pointer;
+    border-bottom: solid 1px #e2e2e2;
+}
+
+#authorName:hover {
+    border-bottom: none;
+}
+
+.author {
     font-weight: bold;
     font-size: 0.9rem;
 }
@@ -449,6 +466,8 @@ body {
 
 #mainNytNavContainer {
     width: 90%;
+    border-top: double #e2e2e2;
+    padding: 7px 0px;
 }
 
 #containermainNytVan {
@@ -496,5 +515,22 @@ body {
 
 .normalItemSubNav {
     font-size: 11px;
+}
+
+#mainFooter {
+    display: flex;
+    justify-content: center;
+    padding-top: 10px;
+    border-top: solid #e2e2e2 1px;
+}
+
+#listMainFooter {
+    display: flex;
+    width: 90%;
+    flex-direction: row;
+    color: #666;
+    font-family: helvetica;
+    font-size: 0.7rem;
+    justify-content: space-between;
 }
 /*END NYT nav*/
