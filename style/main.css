@@ -12,6 +12,10 @@ ul {
   padding: 0;
 }
 
+.flex { display: flex; }
+
+.helvetica { font-family: helvetica, Arial, sans-serif; }
+
 body {
   color: #333;
   width: 100%;
@@ -19,7 +23,6 @@ body {
 
 /* START top navigation bar */
 #topNavBar {
-  display: flex;
   justify-content: space-between;
   align-items: center;
   position: fixed;
@@ -32,7 +35,6 @@ body {
 }
 
 #leftNav {
-  display: flex;
   justify-content: space-between;
 }
 
@@ -46,7 +48,6 @@ body {
 
 .navIcon {
   padding: 8px 15px;
-  font-family: helvetica, Arial, sans-serif;
   font-size: 15px;
   font-weight: bold;
   cursor: pointer;
@@ -74,7 +75,6 @@ body {
 /* START header of page */
 
 #titleArticleHeader {
-  display: flex;
   flex-direction: column;
   align-items: center;
   margin-top: 7rem;
@@ -91,14 +91,12 @@ body {
 
 .interactions {
   width: 600px;
-  display: flex;
   gap: 17px;
   margin-bottom: 20px;
   cursor: pointer;
 }
 
 .containerSocialMedia {
-  display: flex;
   align-items: center;
   gap: inherit;
 }
@@ -183,7 +181,6 @@ body {
 }
 
 .gridArticleFooter {
-  font-family: helvetica, Arial, sans-serif;
   color: rgb(102, 102, 102);
   font-size: 12px;
 }
@@ -199,7 +196,6 @@ body {
 }
 
 .gridArticleFooterInteraction {
-  display: flex;
   justify-content: space-between;
   margin: 24px auto;
 }
@@ -218,12 +214,10 @@ body {
 }
 
 .mainContent {
-  display: flex;
   flex-direction: column;
   padding-bottom: 30px;
   border-bottom: solid 1px #e2e2e2;
   gap: 15px;
-  font-family: helvetica, Arial, sans-serif;
   letter-spacing: -0.5px;
 }
 
@@ -246,7 +240,6 @@ body {
 }
 
 #advertisingContainer {
-  display: flex;
   align-items: center;
   padding: 12px 0;
 }
@@ -261,7 +254,6 @@ body {
   font-weight: bold;
   font-size: 0.9rem;
   letter-spacing: normal;
-  font-family: helvetica, Arial, sans-serif;
 }
 
 #adverNormal {
@@ -286,16 +278,13 @@ body {
 }
 
 #thanksSubscribe {
-  display: flex;
   justify-content: center;
-  font-family: helvetica, Arial, sans-serif;
   font-weight: bold;
   font-size: 15px;
   height: 76px;
 }
 
 #spanContainerThanksSubscribe {
-  display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
@@ -308,7 +297,6 @@ body {
 }
 
 .gridAside {
-  display: flex;
   justify-content: center;
   align-self: center;
 }
@@ -327,7 +315,6 @@ body {
 }
 
 .containerSingleSuggestion {
-  display: flex;
   font-size: 13px;
 }
 
@@ -363,7 +350,6 @@ body {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: repeat(4, 1fr);
-  font-family: helvetica, Arial, sans-serif;
   grid-gap: 15px 5px;
   margin-bottom: 24px;
 }
@@ -390,7 +376,6 @@ body {
 }
 
 #middleArticleFooter {
-  font-family: helvetica, Arial, sans-serif;
   font-size: 13px;
 }
 
@@ -400,7 +385,6 @@ body {
 
 /* START navBottom */
 #bottomNav {
-  display: flex;
   justify-content: center;
   width: 1200px;
   gap: 30px;
@@ -414,7 +398,6 @@ body {
 }
 
 .tittleNavBottom {
-  font-family: helvetica, Arial, sans-serif;
   width: 100%;
   font-size: 15px;
   font-weight: bold;
@@ -436,7 +419,6 @@ body {
 .dateNavBottomPic {
   color: rgb(153, 153, 153);
   font-size: 12px;
-  font-family: helvetica, Arial, sans-serif;
 }
 
 .navBottomImgCapt {
@@ -465,10 +447,8 @@ body {
 
 /* START NYT nav */
 #mainNytNav {
-  display: flex;
   justify-content: center;
   justify-self: center;
-  font-family: helvetica, Arial, sans-serif;
 }
 
 #mainNytNavContainer {
@@ -477,12 +457,7 @@ body {
   padding: 7px 0;
 }
 
-#containermainNytVan {
-  display: flex;
-}
-
 #nytNav {
-  display: flex;
   justify-content: space-between;
   width: 80%;
 }
@@ -525,18 +500,15 @@ body {
 }
 
 #mainFooter {
-  display: flex;
   justify-content: center;
   padding-top: 10px;
   border-top: solid #e2e2e2 1px;
 }
 
 #listMainFooter {
-  display: flex;
   width: 90%;
   flex-direction: row;
   color: #666;
-  font-family: helvetica, Arial, sans-serif;
   font-size: 0.7rem;
   justify-content: space-between;
 }
