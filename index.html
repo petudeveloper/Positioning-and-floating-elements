@@ -188,6 +188,9 @@
                 Cosmic Extragalactic Polarization, reported their results in a scientific briefing at the Center for 
                 Astrophysics here on Monday and in a set of papers submitted to The Astrophysical Journal.
             </p>
+            <div class="linkToFeedback">
+                <a class="goToFormLink" href="#socialMediaFooter">Do you like this articicle?</a>
+            </div>
         </article>
         <aside id="aside1" class="gridAside">
             <div id="containerSuggestions">
@@ -387,6 +390,9 @@
                 this year. At least a dozen other teams are trying similar measurements from balloons, mountaintops 
                 and space.
             </p>
+            <div class="linkToFeedback">
+                <a class="goToFormLink" href="#socialMediaFooter">Do you like this articicle?</a>
+            </div>
             <h2>Spirals in the Sky</h2>
             <p>
                 Gravity waves are the latest and deepest secret yet pried out of the cosmic microwaves, which were 
@@ -456,6 +462,42 @@
                     </div>
                 </div>
             </footer>
+            <div id="feedbackContainer">
+                <button type="button" class="collapsible" id="feedbackBtn">Your opinion is important ¡CLICK HERE!</button>
+                <div class="formContent">
+                    <form action="#" id="feedbackForm">
+                        <label for="name">
+                            Name:
+                            <input type="text" id="name" placeholder="Enter youtr name here" required>
+                        </label>
+                        <label for="email">
+                            E-mail:
+                            <input type="email" id="email" placeholder="Enter your email here" required>
+                        </label>
+                        <div>
+                            <legend>What is your overall opinion about this article?</legend>
+                            <label for="positive">
+                                <input type="radio" id="positive" value="positive" name="opinion" required>
+                                Positive
+                            </label>
+                            <label for="negative">
+                                <input type="radio" id="negative" value="negative" name="opinion" required>
+                                Negative
+                            </label>
+                            <label for="neutral">
+                                <input type="radio" id="neutral" value="neutral" name="opinion" required>
+                                Neutral
+                            </label>
+                        </div>
+                        <input id="writtenComment" type="text" placeholder="Type your comment here…" required>
+                        <label for="yes">
+                            I want to subscribe to the newsletter: 
+                            <input type="checkbox" id="yes" value="yes" name="accept">
+                        </label>
+                        <button type="submit" id="submitForm">SEND</button>
+                    </form>
+                </div>
+            </div>
         </article>
     </div>
     <nav id="bottomNav">
@@ -757,5 +799,19 @@
             <li class="footerItem">Subscriptions</li>
         </ul>
     </footer>
+    <script>
+        const coll = document.getElementsByClassName("collapsible");
+        for (let i = 0; i < coll.length; i++) {
+            coll[i].addEventListener("click", function() {
+                this.classList.toggle("active");
+                var content = this.nextElementSibling;
+                if (content.style.display === "block") {
+                content.style.display = "none";
+                } else {
+                content.style.display = "block";
+                }
+            });
+        }
+    </script>
 </body>
 </html>
