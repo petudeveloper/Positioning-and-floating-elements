@@ -4,6 +4,8 @@
 
 > In this project the assignment is to copy an article from the New York Times.
 
+![screenshot](/project_creenshot.png)
+
 ## Built With
 
 - CSS
